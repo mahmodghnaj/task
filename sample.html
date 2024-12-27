@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        </ul>
+      </header>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h1>Front End Developer Test</h1>
+      <p class="lead">
+        This is a sample page for JavaScript evaluvation.
+      </p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        Click to show Your tasks
+      </a>
+      <div class="collapse" id="collapseExample" style="padding-top:12px;">
+        <div class="card card-body">
+          <ul class="list-group mt-4">
+            <li class="list-group-item">A. Read all data from the below given table using JS or jQuery.</li>
+            <li class="list-group-item">B. Do not use bootstrap classes in your codes to read/update data.</li>
+            <li class="list-group-item">C. Read all values and show in the bottom section with class name
+              <code class="highlighter-rouge">bottom-data-section</code>
+              like accordion. Each accordion headding belongs to the combination of first and last name.
+            </li>
+            <li class="list-group-item">D. Add filter to the <code class="highlighter-rouge">bottom-data-section</code>
+              with given inputs on the website.
+              First filter with column filter (First name,Second name) second with first or last name conatin in the
+              table.
+            </li>
+            <li class="list-group-item">E. Need to work both filter together</li>
+            <li class="list-group-item">F. Add custom button between input filed and table this website, and with the
+              custom button click add a new column
+              to teh website table with age calculated. please compare with current year. hide the custom button after
+              this.
+            </li>
+            <li class="list-group-item">G. Finally Need to update the above workflow(A,B,C,D) as per new table data</li>
+            <li class="list-group-item">H. Do Not Make any changes in HTML File, you need to use the file as it is.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mb-12 container">
+        <div class="col-12 themed-grid-col" style="padding:12px 0">
+          <input type="text" class="form-control" placeholder="Table filed names with comma seperate"
+            autocomplete="off">
+          <div id="emailHelp" class="form-text">Ex:First,Last</div>
+        </div>
+        <div class="col-12 themed-grid-col" style="padding:12px 0">
+          <input type="text" class="form-control" placeholder="Give name filter" autocomplete="off">
+          <div id="emailHelp" class="form-text">Enter name</div>
+        </div>
+        <div class="col-12 themed-grid-col">
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Date of year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>1989</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>2000</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>Jim</td>
+                <td>1978</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Sara</td>
+                <td>James</td>
+                <td>1993</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Sameer</td>
+                <td>Akbar</td>
+                <td>1990</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <section class="bottom-data-section"></section>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href=#">Ntigra</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
